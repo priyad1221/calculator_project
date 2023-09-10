@@ -25,7 +25,7 @@ while continue_flag:
     calculator_function = operations_dict[op_symbol]
     output=calculator_function(number1,number2)
     print(f"{number1}{op_symbol}{number2}={output}")
-    should_continue=input("Enter 'y' to continue calculation with {output} or 'n' to exit: ").lower()
+    should_continue=input(f"Enter 'y' to continue calculation with {output} or 'n' to exit: ").lower()
     if should_continue=='y':
         number1=output
     else:
